@@ -1,0 +1,5 @@
+/.vs/
+/.idea/
+/.vscode/
+/Hive-gRPC-dotNet/obj/
+/Hive-gRPC-dotNet/bin/
