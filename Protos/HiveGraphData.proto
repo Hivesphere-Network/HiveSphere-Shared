@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 option csharp_namespace = "Hive.Protocol";
 
@@ -15,4 +15,4 @@ message GetGraphRequest
 message GetGraphResponse
 {
     string response = 1;
-}
+};
