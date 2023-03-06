@@ -1,0 +1,18 @@
+syntax = "proto3"
+
+option csharp_namespace = "Hive.Protocol";
+
+service HiveGraph
+{
+    rpc GetGraph (GetGraphRequest) returns (GetGraphResponse);
+}
+
+message GetGraphRequest
+{
+    string query = 1;
+}
+
+message GetGraphResponse
+{
+    string response = 1;
+}
