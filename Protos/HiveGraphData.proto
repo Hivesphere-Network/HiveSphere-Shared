@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "Hive.Protocol";
 
-service HiveGraph
+service HiveGraphData
 {
     rpc GetGraph (GetGraphRequest) returns (GetGraphResponse);
 }
