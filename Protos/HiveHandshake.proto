@@ -19,5 +19,5 @@ message HandshakeResponse
     string serverName = 1;
     string serverVersion = 2;
     string serverID = 3;
-    string Token = 4;
+    string HandshakeToken = 4;
 }
