@@ -10,6 +10,7 @@ service HiveGraphData
 message GetGraphRequest
 {
     string query = 1;
+    repeated string parameter = 2;
 }
 
 message GetGraphResponse
