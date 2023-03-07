@@ -5,6 +5,7 @@ option csharp_namespace = "Hive.Protocol";
 service HiveGraphData
 {
     rpc GetGraphData (GetGraphRequest) returns (GetGraphResponse);
+    rpc WriteGraphData (WriteGraphRequest) returns (WriteGraphResponse);
 }
 
 message GetGraphRequest
@@ -14,6 +15,17 @@ message GetGraphRequest
 }
 
 message GetGraphResponse
+{
+    string response = 1;
+};
+
+message WriteGraphRequest
+{
+    string query = 1;
+    repeated string parameter = 2;
+}
+
+message WriteGraphResponse
 {
     string response = 1;
 };
