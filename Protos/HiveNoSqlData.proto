@@ -9,7 +9,9 @@ service HiveNoSqlData
 
 message NosqlDataRequest 
 {
-    string key = 1;
+    string collection = 1;
+    string key = 2;
+    string value = 3;
 }
 
 message NosqlDataResponse 
