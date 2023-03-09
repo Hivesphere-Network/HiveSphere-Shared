@@ -3,11 +3,12 @@ syntax = "proto3";
 option csharp_namespace = "Hive.Protocol";
 
 
-service HiveNoSql {
+service HiveNoSqlData {
     rpc GetNoSqlData(NosqlDataRequest) returns (NosqlDataResponse);
 }
 
 message NosqlDataRequest {
+
     string key = 1;
 }
 
