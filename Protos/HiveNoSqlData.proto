@@ -4,8 +4,8 @@ option csharp_namespace = "Hive.Protocol";
 
 service HiveNoSqlData 
 {
-    rpc GetNoSqlData (SingleDataReadRequest) returns (SingleDataReadResponse);
-    rpc SetNoSqlData (SingleDataWriteRequest) returns (SingleDataWriteResponse);
+    rpc GetSingleData (SingleDataReadRequest) returns (SingleDataReadResponse);
+    rpc SetSingleData (SingleDataWriteRequest) returns (SingleDataWriteResponse);
 }
 
 message SingleDataReadRequest
