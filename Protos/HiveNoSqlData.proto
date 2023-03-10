@@ -7,14 +7,14 @@ service HiveNoSqlData
     rpc GetNoSqlData (NosqlDataRequest) returns (NosqlDataResponse);
 }
 
-message NosqlDataRequest 
+message NosqlGetDataRequest 
 {
     string collection = 1;
     string key = 2;
     string value = 3;
 }
 
-message NosqlDataResponse 
+message NosqlGetDataResponse 
 {
     string value = 1;
 }
