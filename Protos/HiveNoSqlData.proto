@@ -6,6 +6,7 @@ service HiveNoSqlData
 {
     rpc GetSingleData (DataReadRequest) returns (SingleDataReadResponse);
     rpc SetSingleData (SingleDataWriteRequest) returns (SingleDataWriteResponse);
+    rpc GetMultiData (DataReadRequest) returns (MultiDataReadResponse);
 }
 
 message DataReadRequest
