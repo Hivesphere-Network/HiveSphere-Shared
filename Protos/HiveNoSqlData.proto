@@ -4,12 +4,11 @@ option csharp_namespace = "Hive.Protocol";
 
 service HiveNoSqlData 
 {
-    rpc GetSingleData (SingleDataReadRequest) returns (SingleDataReadResponse);
+    rpc GetSingleData (DataReadRequest) returns (SingleDataReadResponse);
     rpc SetSingleData (SingleDataWriteRequest) returns (SingleDataWriteResponse);
 }
 
-message SingleDataReadRequest
-
+message DataReadRequest
 {
     string collection = 1;
     repeated string key = 2;
@@ -19,6 +18,11 @@ message SingleDataReadRequest
 message SingleDataReadResponse
 {
     string value = 1;
+}
+
+message MultiDataReadResponse
+{
+    repeated string value = 1;
 }
 
 message SingleDataWriteRequest 
