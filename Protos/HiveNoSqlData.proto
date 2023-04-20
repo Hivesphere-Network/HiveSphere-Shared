@@ -13,10 +13,15 @@ message DataReadRequest
 {
     string collection = 1;
     repeated string key = 2;
-    repeated oneof read_type
+    repeated SearchParameter search = 3;
+}
+
+message SearchParameter
+{
+    oneof read_type
     {
-        string value = 3;
-        int32 value_int = 4;
+        string value = 1;
+        int32 value_int = 2;
     }
 }
 
