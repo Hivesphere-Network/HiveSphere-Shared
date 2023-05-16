@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option csharp_namespace ="Hive.Protocol";
+
+service HiveHealthCheck
+{
+    rpc health (Empty) returns (HealthCheckResponse );
+}
+
+message Empty 
+{
+}
+
+message HealthCheckResponse 
+{
+    bool isHealthy = 1;
+}
